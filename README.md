@@ -18,6 +18,13 @@ On the other hand, the OCR quality is pretty good, if you just need to identify 
 
 ![image](https://cloud.githubusercontent.com/assets/121520/14005729/4bf2648e-f123-11e5-84d6-be1c9d84cdcd.png)
 
+###### 3. Google GMail CAPTCHA (circa 2009)
+
+Added this out of curiousity: a sample taken from Google's 2009 research paper, [What’s Up CAPTCHA?; A CAPTCHA Based On Image Orientation](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35157.pdf)
+
+![captcha](http://i.imgur.com/3lu00lM.jpg)
+
+
 
 You can [read more about getting started with the Google Cloud Vision API in its official docs](https://cloud.google.com/vision/docs/getting-started). My Python script is a somewhat simplified version of the official instructions here:
 
@@ -62,6 +69,17 @@ TURNS
 ALL TURNS f
 A
 
+~~~
+
+### GMail Captcha
+
+Sorry spammers, you probably won't get far using Google's API against its old CAPTCHA system (nevermind its [current one](https://www.google.com/recaptcha/intro/index.html)):
+
+~~~py
+    Bounding Polygon:
+{'vertices': [{'y': 73, 'x': 142}, {'y': 73, 'x': 339}, {'y': 173, 'x': 339}, {'y': 173, 'x': 142}]}
+    Text:
+ngly:h
 ~~~
 
 
