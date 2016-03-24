@@ -317,4 +317,10 @@ Cloud Vision probably isn't intended for picking apart text documents. Occasiona
 ~~~
 
 
+For a more robust experience, you probably want to follow the example linked from the API's official docs:
+
+https://github.com/GoogleCloudPlatform/cloud-vision/tree/master/python/text
+
+It includes using the __googleapiclient__ library, which has various conveniences including a `num_retries` argument.
+
 
