@@ -297,3 +297,24 @@ BAKER, BENITA DECATUR IL BAKER, BENITA $17,100 $11,738 $6,884 $35,722
 ~~~
 
 
+# Performance and latency
+
+I didn't rigorously test this so these are just rough averages/medians:
+
+* __Road signs:__ 2.1 seconds
+* __Spreadsheet:__ 6.8 seconds
+* __Spreadsheet (with Tesseract)__: 4.1 seconds
+
+Cloud Vision probably isn't intended for picking apart text documents. Occasionally, the API would fail on the spreadsheet image with this result:
+
+~~~json
+{
+  "error": {
+    "code": 4,
+    "message": "image-annotator::RPC deadline exceeded.: Backend timeout!"
+  }
+}
+~~~
+
+
+

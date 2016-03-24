@@ -51,9 +51,8 @@ if __name__ == '__main__':
             $ python cloudvisreq.py api_key image1.jpg image2.png""")
     else:
         response = request_ocr(api_key, image_filenames)
-        if response.status_code != 200:
+        if response.status_code != 200 or response.json().get('error'):
             print(response.text)
-
         else:
             for idx, resp in enumerate(response.json()['responses']):
                 # save to JSON file
