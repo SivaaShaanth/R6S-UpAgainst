@@ -323,4 +323,26 @@ https://github.com/GoogleCloudPlatform/cloud-vision/tree/master/python/text
 
 It includes using the __googleapiclient__ library, which has various conveniences including a `num_retries` argument.
 
+#### Authenticating via oauth2 JSON credentials
 
+If you want to use the __googleapiclient__, which includes authenticating via oauth2 credentials, here's a variation of how to authenticate a service request as shown in the official docs, except from a given filename (i.e. as opposed to setting an environment variable and calling `GoogleCredentials.get_application_default()`):
+
+~~~py
+from googleapiclient import discovery
+from oauth2client.client import GoogleCredentials
+DISCOVERY_URL = 'https://{api}.googleapis.com/$discovery/rest?version={apiVersion}'
+def get_vision(oauth2_creds_filename, service_url=DISCOVERY_URL):
+    """
+    Read oauth2 credentials and return a Google service object,
+      which you can then invoke like this:
+
+    ("vision" is the service object)
+    request = vision.images().annotate(body={'requests': img_requests_data})
+    vision_response_dict = request.execute(num_retries=5)
+
+    """
+    creds = GoogleCredentials.from_stream(oauth2_creds_filename)
+    service = discovery.build('vision', 'v1', credentials=creds,
+                              discoveryServiceUrl=DISCOVERY_URL)
+    return service
+~~~
