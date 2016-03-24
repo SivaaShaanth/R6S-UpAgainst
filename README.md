@@ -1,8 +1,23 @@
 # Using Google Cloud Vision API to OCR scanned documents to extract structured data
 
-Just a quickie test to see if [Google Cloud Vision](https://cloud.google.com/vision) can be used to effectively OCR a scanned data table, in the way that products like [ABBYY FineReader provide image-ocr-to-Excel](https://github.com/dannguyen/abbyy-finereader-ocr-senate).
+Just a quickie test in Python 3 (using Requests) to see if [Google Cloud Vision](https://cloud.google.com/vision) can be used to effectively OCR a scanned data table, in the way that products like [ABBYY FineReader provide image-ocr-to-Excel](https://github.com/dannguyen/abbyy-finereader-ocr-senate).
 
 __The short answer:__ No. While Cloud Vision provides bounding polygon coordinates in its output, it doesn't provide it at the word or region level, which would be needed to then calculate the data delimiters.
+
+On the other hand, the OCR quality is pretty good. I've included two examples: 
+
+####### 1. An image of road signs
+
+[Courtesy of SPUI on Wikicommons](https://commons.wikimedia.org/wiki/File:Jughandle_signage.jpg):
+
+![Jughandle_signage](https://upload.wikimedia.org/wikipedia/commons/e/e4/Jughandle_signage.jpg)
+
+####### 2. An image of a spreadsheet
+
+[Courtesy of Eli Lilly](http://www.lillyphysicianpaymentregistry.com/Payments-to-Physicians):
+
+![image](https://cloud.githubusercontent.com/assets/121520/14005729/4bf2648e-f123-11e5-84d6-be1c9d84cdcd.png)
+
 
 You can [read more about getting started with the Google Cloud Vision API in its official docs](https://cloud.google.com/vision/docs/getting-started). My Python script is a somewhat simplified version of the official instructions here:
 
@@ -22,19 +37,40 @@ The __cloudvisreq.py__ script is included at the bottom of this gist.
 $  python cloudvisreq.py API_KEY image1.jpg image2.png
 ~~~
 
-### Sample image:
-
-[Courtesy of Eli Lilly](http://www.lillyphysicianpaymentregistry.com/Payments-to-Physicians):
-
-![image](https://cloud.githubusercontent.com/assets/121520/14005729/4bf2648e-f123-11e5-84d6-be1c9d84cdcd.png)
 
 
 
-### Result:
+## Results
+
+### Road signs
 
 ~~~
-Wrote 3021 bytes to jsons/pdftable.png.json
----------------------------------------------
+    Bounding Polygon:
+{'vertices': [{'x': 16, 'y': 21}, {'x': 772, 'y': 21}, {'x': 772, 'y': 322}, {'x': 16, 'y': 322}]}
+    Text:
+WARRENVILLE RD
+NORTH
+SOUTH
+ALL TURNS
+FROM
+WASHINGTON AVE
+RIGHT LANE
+GREEN BROOK
+U AND LEFT
+DUNELLEN
+TURNS
+ALL TURNS f
+A
+
+~~~
+
+
+### Spreadsheet
+
+
+
+
+~~~
     Bounding Polygon:
 {'vertices': [{'y': 272, 'x': 212}, {'y': 272, 'x': 3066}, {'y': 2295, 'x': 3066}, {'y': 2295, 'x': 212}]}
     Text:
