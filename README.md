@@ -1,12 +1,36 @@
+# Using Google Cloud Vision API to OCR scanned documents to extract structured data
+
+Just a quickie test to see if [Google Cloud Vision](https://cloud.google.com/vision) can be used to effectively OCR a scanned data table, in the way that products like [ABBYY FineReader provide image-ocr-to-Excel](https://github.com/dannguyen/abbyy-finereader-ocr-senate).
+
+__The short answer:__ No. While Cloud Vision provides bounding polygon coordinates in its output, it doesn't provide it at the word or region level, which would be needed to then calculate the data delimiters.
+
+You can [read more about getting started with the Google Cloud Vision API in its official docs](https://cloud.google.com/vision/docs/getting-started). The instructions here are a somewhat simplified version of the official instructions here:
+
+https://github.com/GoogleCloudPlatform/cloud-vision/tree/master/python/text
+
+Set up a Google developer account and get an API key:
+
+https://cloud.google.com/vision/docs/auth-template/cloud-api-auth#set_up_an_api_key
+
 
 
 ## How to run
+
+The __cloudvisreq.py__ script is included at the bottom of this gist.
 
 ~~~sh
 $  python cloudvisreq.py API_KEY image1.jpg image2.png
 ~~~
 
-Result:
+### Sample image:
+
+[Courtesy of Eli Lilly](http://www.lillyphysicianpaymentregistry.com/Payments-to-Physicians):
+
+![image](https://cloud.githubusercontent.com/assets/121520/14005729/4bf2648e-f123-11e5-84d6-be1c9d84cdcd.png)
+
+
+
+### Result:
 
 ~~~
 Wrote 3021 bytes to jsons/pdftable.png.json
