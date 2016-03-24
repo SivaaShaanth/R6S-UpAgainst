@@ -4,11 +4,11 @@ Just a quickie test to see if [Google Cloud Vision](https://cloud.google.com/vis
 
 __The short answer:__ No. While Cloud Vision provides bounding polygon coordinates in its output, it doesn't provide it at the word or region level, which would be needed to then calculate the data delimiters.
 
-You can [read more about getting started with the Google Cloud Vision API in its official docs](https://cloud.google.com/vision/docs/getting-started). The instructions here are a somewhat simplified version of the official instructions here:
+You can [read more about getting started with the Google Cloud Vision API in its official docs](https://cloud.google.com/vision/docs/getting-started). My Python script is a somewhat simplified version of the official instructions here:
 
 https://github.com/GoogleCloudPlatform/cloud-vision/tree/master/python/text
 
-Set up a Google developer account and get an API key:
+You first have to set up a Google developer account and get an API key (the API allows 1000 free requests a month):
 
 https://cloud.google.com/vision/docs/auth-template/cloud-api-auth#set_up_an_api_key
 
