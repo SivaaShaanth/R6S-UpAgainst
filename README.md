@@ -151,3 +151,149 @@ BAILEY-GRAY, PATRICK
 DECATUR IL BAKER, BENITA $17.100 S11738 $6,884 $35,722
 BAKER, BENITA
 ~~~
+
+### Tesseract comparison 
+
+__Tesseract (version 3.04 as of Feb. 2016)__, [the open-source OCR tool currently maintained by Google](https://github.com/tesseract-ocr/tesseract), doesn't perform meaningfully in the photo of the road signs, but it is generally pretty strong in the case of screenshotted text. For comparison's sake, here is its output of the tabular data example:
+
+~~~
+ 
+
+o Lilly Other Health Care Professional Registry
+Payments Made: Q1-Q4 2013 Data updated on Monday, March 3, 2014
+
+ 
+
+The Other Health Care Professional Registry reports direct and indirect payments by Lilly, as well as Lilly's portion of alliance partnership payments to health care professionals other than physicians serving as faculty
+members. When the "Entity Paid" is a company, hospital, or university, and there is a different name on the provider of service, it reﬂects an indirect payment which may or may not actually have been received in
+whole or in part by the listed service provider. Copyright © 2014 Eli Lilly and Company. All rights reserved.
+
+Note: Due to differences in scope and deﬁnitions, the data reported in this report may differ from data included in reports submitted by Lilly for compliance with state payment reporting laws.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Payments*
+(All Amounts in US Dollars)
+Provider of Service *Payments for re u bursed expenses are not compensatio
+Advising]
+H
+Patient Education “2:13:33 consulting & Certain
+Name Location State Name . International Travel-Related 2013 Total
+Programs Education .
+Programs Education Expenses
+Programs
+A1 CERTIFIED DIABETES EDUCATORS,
+LLC GILBERT AZ WARD, JAN ET $300 $1,631 $129 $2,060
+ABDALLAH, RITA FAIRVIEW PARK OH ABDALLAH, RITA $14,025 $500 $2,823 $17,348
+ADAMS, MARY ELLEN CINCINNATI OH ADAMS, MARY ELLEN $3,450 $1,594 $5,044
+AGOSTI, CAROL TOLEDO OH AGOSTI, CAROL $1,050 $1,631 $355 $3,036
+AINSWORTH, ABBY CORPUS CHRISTI TX AINSWORTH, ABBY $113 $113
+AKERS, REBECCA VINCENNES IN AKERS, REBECCA $2,400 $2,400
+ALCHEMIPHARMA LLC, WAYNE PA BELAZI, DEA $11,889 $199 $12,088
+ALEMAN, MARY MEADOW VISTA CA ALEMAN, MARY $3,300 $1,294 $346 $4,940
+ALEXANDER, LISA EVANSVILLE IN ALEXANDER, LISA $3,000 $1,988 $1,077 $6,065
+ALLEN, CONNETI'E COTTAGE GROVE MN ALLEN, CONNETI'E $6,113 $875 $2,347 $9,335
+ALLISON HEINRICH, L.L. LUBBOCK TX HEINRICH, ALLISON $4,200 $1,238 $5,438
+ALLISON, CRYSTAL GOODYEAR AZ ALLISON, CRYSTAL $250 $250
+ALLISON, SUSAN EASTON PA ALLISON, SUSAN $7,950 $2,138 $2,252 $12,340
+ALVAREZ, MICHELLE MCALLEN TX ALVAREZ, MICHELLE $4,650 $750 $244 $5,644
+ANDARIESE, JUDITH BROOKLYN NY AN DARIESE, JUDITH $12,450 $338 $1,029 $13,817
+ANGELES WORLD, INC., GRANADA HILLS CA ANGELES, ADA $39,150 $11,456 $938 $9,181 $60,725
+ARBOLEDA, JANE MIAMI FL ARBOLEDA, JANE $375 $4,875 $549 $5,799
+ARMSTRONG, JULIE WACO TX ARMSTRONG, JULIE $2,400 $750 $3,150
+ARNOLD, MARY BETH AUGUSTA GA ARNOLD, MARY BETH $900 $2,006 $657 $3,563
+ARRAMBIDE, ROBIN KATY TX ARRAMBIDE, ROBIN $1,719 $1,719
+ARRINGTON, WANDA CHARLOTTE NC ARRINGTON, WANDA $2,531 $258 $2,789
+ASHFORD, RICHARD WILKES BARRE PA ASHFORD, RICHARD $3,525 $339 $3,864
+ATTANASIO, MICHAEL SEWELL NJ AlTANASIO, MICHAEL $450 $450
+AVOLIO, JOHN INDIANA PA AVOLIO, JOHN $225 $225
+BABEY, CHRISTINE SCOTTSDALE AZ BABEY, CHRISTINE $5,100 $13,294 $2,135 $20,529
+BAILEY-G RAY, PATRICK DALLAS TX BAILEY-G RAY, PATRICK $226 $226
+BAIRD, DENISE LANCASTER PA BAIRD, DENISE $3,000 $638 $176 $3,814
+BAKER, BENITA DECATUR IL BAKER, BENITA $17,100 $11,738 $6,884 $35,722
+
+ 
+
+ 
+
+~~~
+
+
