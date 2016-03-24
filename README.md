@@ -12,17 +12,20 @@ On the other hand, the OCR quality is pretty good, if you just need to identify 
 
 ![Jughandle_signage](https://upload.wikimedia.org/wikipedia/commons/e/e4/Jughandle_signage.jpg)
 
+
+###### 1a. Google GMail CAPTCHA (circa 2009)
+
+Added this out of curiousity: a sample taken from Google's 2009 research paper, [What’s Up CAPTCHA?; A CAPTCHA Based On Image Orientation](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35157.pdf)
+
+![captcha](http://i.imgur.com/3lu00lM.jpg)
+
+
 ####### 2. An image (PDF to PNG) of a spreadsheet
 
 [Courtesy of Eli Lilly](http://www.lillyphysicianpaymentregistry.com/Payments-to-Physicians):
 
 ![image](https://cloud.githubusercontent.com/assets/121520/14005729/4bf2648e-f123-11e5-84d6-be1c9d84cdcd.png)
 
-###### 3. Google GMail CAPTCHA (circa 2009)
-
-Added this out of curiousity: a sample taken from Google's 2009 research paper, [What’s Up CAPTCHA?; A CAPTCHA Based On Image Orientation](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35157.pdf)
-
-![captcha](http://i.imgur.com/3lu00lM.jpg)
 
 
 
