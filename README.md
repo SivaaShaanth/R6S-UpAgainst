@@ -177,6 +177,8 @@ BAKER, BENITA
 
 __Tesseract (version 3.04 as of Feb. 2016)__, [the open-source OCR tool currently maintained by Google](https://github.com/tesseract-ocr/tesseract), doesn't perform meaningfully in the photo of the road signs, but it is generally pretty strong in the case of screenshotted text. For comparison's sake, here is its output of the tabular data example -- unlike the Cloud Vision API, it *does* attempt to preserve some of the line layout -- and it has the option of [providing HOCR output which can then be used to further define spatial layout](https://github.com/jsfenfen/whatwordwhere).
 
+(note: I've preserved the whitespace in the output, so there are a few dozen blank lines at the bottom...keep scrolling to get to the next section...)
+
 ~~~
  
 
