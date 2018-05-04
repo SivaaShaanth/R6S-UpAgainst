@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Using Python 3 + Google Cloud Vision API's OCR to extract text from photos and scanned documents
 
 Just a quickie test in Python 3 (using Requests) to see if [Google Cloud Vision](https://cloud.google.com/vision) can be used to effectively OCR a scanned data table and preserve its structure, in the way that products such as [ABBYY FineReader can OCR an image and provide Excel-ready output](https://github.com/dannguyen/abbyy-finereader-ocr-senate).
@@ -373,3 +374,6 @@ def get_vision(oauth2_creds_filename, service_url=DISCOVERY_URL):
 =======
 # R6S-UpAgainst
 >>>>>>> 6dab65e7331611736b41e1c7ef847912b40dfac2
+=======
+Scripts to read names of a screenshot from in-game, recognize player names using Gcloud Vision, hit https://r6db.com/ and search for their maximum ranks through all seasons and display it on https://sivaashaanth.github.io/
+>>>>>>> ba6218b696844811b67e45a50dae46f45597c08c
