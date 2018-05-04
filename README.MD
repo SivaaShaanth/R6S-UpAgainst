@@ -1,0 +1,1 @@
+Scripts to read names of a screenshot from in-game, recognize player names using Gcloud Vision, hit https://r6db.com/ and search for their maximum ranks through all seasons and display it on https://sivaashaanth.github.io/
