@@ -16,15 +16,16 @@ def make_image_data_list(image_filenames):
         needs them to be
     """
     img_requests = []
-    with open(image_filenames, 'rb') as f:
-        ctxt = b64encode(f.read()).decode()
-        img_requests.append({
-                'image': {'content': ctxt},
-                'features': [{
-                    'type': 'TEXT_DETECTION',
-                    'maxResults': 1
-                }]
-        })
+    for imgname in image_filenames:
+        with open(imgname, 'rb') as f:
+            ctxt = b64encode(f.read()).decode()
+            img_requests.append({
+                    'image': {'content': ctxt},
+                    'features': [{
+                        'type': 'TEXT_DETECTION',
+                        'maxResults': 1
+                    }]
+            })
     return img_requests
 
 def make_image_data(image_filenames):
@@ -42,8 +43,7 @@ def request_ocr(api_key, image_filenames):
 
 
 if __name__ == '__main__':
-    api_key, image_filenames = argv[1],argv[2]
-    print(image_filenames)
+    api_key, *image_filenames = argv[1:]
     if not api_key or not image_filenames:
         print("""
             Please supply an api key, then one or more image filenames
@@ -56,7 +56,7 @@ if __name__ == '__main__':
         else:
             for idx, resp in enumerate(response.json()['responses']):
                 # save to JSON file
-                imgname = image_filenames
+                imgname = image_filenames[idx]
                 jpath = join(RESULTS_DIR,'players.txt')
                 with open(jpath, 'w') as f:
                     datatxt = resp['textAnnotations'][0]['description']
